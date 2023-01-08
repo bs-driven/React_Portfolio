@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+
+  body {
+    background-color: whitesmoke;
+  }
+
+  .portfolio-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 800px;
+    min-height: 600px;
+    background: maroon;
+    text-align: center;
+    margin: 32px auto;
+    border-radius: 20px;
+    padding-bottom: 32px;
+  }
+
+  .contact-form {
+    margin-bottom: 32px;
+  }
+  .contact-input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px;
+    border: 2px solid #5d0cff;
+    outline: none;
+    width: 320px;
+    background: black;
+    color: #fff;
+  }
+
+  .contact-input::placeholder {
+    color: #e2e2e2;
+  }
+
+  .contact-button {
+    margin-top: 5px;
+    padding: 16px;
+    border: 3px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    background: #5d0cff;
+    color: #fff;
+    text-transform: capitalize;
+  }

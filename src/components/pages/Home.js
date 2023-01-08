@@ -5,17 +5,14 @@ export default function Home() {
     <div>
       <h1>Home Page</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-        velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-        ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-        non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-        ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-        rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-        tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-        porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-        vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus.
-      </p>
+        Hello and thank you for taking the time to take a look at what I have here.
+        I hope to work with a company that will allow me the chance to grow and learn.
+        I hope I meet the basic quailfacation to be consider for a entry level postion within your company.
+        All I ask is for is consideration, and a bit of patiences I'm a quick learner; yet there are time s I don't pick up on things as quickly as i would something else.
+        For instance its taken me ^months just to learn to code to this degree and I intend to go much futher in due time.
+        If your looking a young person eager to learn and go much further.
+        I'll put this the eaasy way I can I am your man.  
+        </p>
     </div>
   );
 }
