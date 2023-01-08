@@ -9,6 +9,15 @@
   body {
     background-color: whitesmoke;
   }
+  
+  .header{
+    background-color: maroon;
+    margin: 6px;
+    padding: 6px;
+  }
+  .header h1{
+    font-size: 30px;
+  }
 
   .portfolio-app {
     display: flex;
@@ -18,7 +27,7 @@
     min-height: 600px;
     background: maroon;
     text-align: center;
-    margin: 32px auto;
+    margin: 15px auto;
     border-radius: 20px;
     padding-bottom: 32px;
   }
@@ -51,3 +60,5 @@
     color: #fff;
     text-transform: capitalize;
   }
+
+ 
