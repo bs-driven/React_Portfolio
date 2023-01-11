@@ -26,21 +26,15 @@ export default function WorkHistory() {
       </p>
       <p>
         I'd like to show you a few of the projects I've worked on:<br></br>
+        <ul className='example-work-list'>
+          <li><button className='example-button'><a href= 'https://github.com/bs-driven/NoteTaker'>Express.js</a></button></li><br></br>
+          <li><button className='example-button'><a href= 'https://github.com/bs-driven/OOP_TeamEx'>OOP(object-oriented programming)</a></button></li><br></br>
+          <li><button className='example-button'><a href='https://github.com/bs-driven/sql_project'>SQL</a></button></li><br></br>
+          <li><button className='example-button'><a href= 'https://github.com/bs-driven/E_Commerce'>ORM(object-relational mapping)</a></button></li><br></br>
+          <li><button className='example-button'><a href='https://github.com/bs-driven/SocialNetworking_NoSql'>NOSQL</a></button></li><br></br>
+          <li><button className='example-button'><a href='https://github.com/bs-driven/PasswordGenerator'>JavaScript</a></button></li><br></br>
 
-        <a href= 'https://github.com/bs-driven/NoteTaker'>NoteTaker</a> A example of me working with Express.<br></br>
-
-        <a href= 'https://github.com/bs-driven/OOP_TeamEx'>Team Genrator</a> A example of me working with OOP.<br></br>
-
-        <a href='https://github.com/bs-driven/sql_project'>Employee Tracker</a> A example of working with SQL.<br></br>
-
-        <a href= 'https://github.com/bs-driven/E_Commerce'>E-Commernce Backend</a> This a example of me working with ORM.<br></br>
-
-        <a href= 'https://github.com/bs-driven/WorkdayEventPlanner'>Workday Scheduler</a> An example of me working a third-party api.<br></br>
-
-        I only give this link to show where I started from while the others show my progress <a href= 'https://github.com/bs-driven/Portfolio'>Portfolio</a> This the first portfolio I created only using what I knew at the time.<br></br> 
-
-         
-
+        </ul>   
        
       </p>
     </div>

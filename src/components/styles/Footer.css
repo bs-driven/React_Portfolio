@@ -1,7 +1,16 @@
-.footer{
-    background-color: aliceblue;
-    margin-top: 22px;
-    text-align: center;
-    display: block;
+.footer-footer{
+    padding:5%;
    
+}
+
+.footer-githubimage{
+    margin-right: 50%;
+    border: 3px solid black;
+    background-color: black;
+}
+
+.footer-LinedIn_logo{
+    margin-top: -10%;
+    margin-left: 50%;
+    border: 3px solid black;
 }

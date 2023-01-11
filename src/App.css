@@ -9,15 +9,6 @@
   body {
     background-color: whitesmoke;
   }
-  
-  .header{
-    background-color: maroon;
-    margin: 6px;
-    padding: 6px;
-  }
-  .header h1{
-    font-size: 30px;
-  }
 
   .portfolio-app {
     display: flex;
@@ -32,6 +23,7 @@
     padding-bottom: 32px;
   }
 
+  
   .contact-form {
     margin-bottom: 32px;
   }
@@ -60,5 +52,28 @@
     color: #fff;
     text-transform: capitalize;
   }
+  
 
- 
+  .aboutMeH1{
+    font-size: 25px;
+    color: white;
+    text-decoration: underline;
+
+  }
+
+ .aboutMePara{
+  text-indent: 10%;
+  color: white;
+  font-size: 18px;
+ }
+ .example-button{
+  border-radius: 23%;
+  border: 4px solid black;
+  background-color: white;
+  font-size: 18px;
+  padding: 6px;
+  margin: 3px;
+ }
+ .example-button:hover{
+  background-color: maroon;
+ }
