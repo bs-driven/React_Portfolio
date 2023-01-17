@@ -19,7 +19,7 @@ function Footer () {
                             resizeMode: "cover",
                             height: 40,
                             width: 75
-                        }} src={require("../components/images/LinkedIn_Logo.png")} alt={ "Linked Logo" }/></a>
+                        }} src={require("../components/images/LinkedIn_Logo.png")} alt={ "LinkedIn Logo" }/></a>
                     </li>
                         
                         

@@ -3,7 +3,7 @@ import React from 'react';
 export default function WorkHistory() {
   return (
     <div className='resume-div'>
-      <h1>Work history</h1>
+      <h1>Work Summary</h1>
       <p>
         As I mentioned earlier I am new to this field so my work history won't reflect anything special. 
         I'm coming from working in a warehouse as a forklift driver. 
@@ -27,12 +27,18 @@ export default function WorkHistory() {
       <p>
         I'd like to show you a few of the projects I've worked on:<br></br>
         <ul className='example-work-list'>
-          <li><button className='example-button'><a href= 'https://github.com/bs-driven/NoteTaker'>Express.js</a></button></li><br></br>
-          <li><button className='example-button'><a href= 'https://github.com/bs-driven/OOP_TeamEx'>OOP(object-oriented programming)</a></button></li><br></br>
-          <li><button className='example-button'><a href='https://github.com/bs-driven/sql_project'>SQL</a></button></li><br></br>
-          <li><button className='example-button'><a href= 'https://github.com/bs-driven/E_Commerce'>ORM(object-relational mapping)</a></button></li><br></br>
-          <li><button className='example-button'><a href='https://github.com/bs-driven/SocialNetworking_NoSql'>NOSQL</a></button></li><br></br>
-          <li><button className='example-button'><a href='https://github.com/bs-driven/PasswordGenerator'>JavaScript</a></button></li><br></br>
+          <li><button className='example-button'><a href= 'https://github.com/bs-driven/NoteTaker'>Express.js</a></button></li>
+
+          <li><button className='example-button'><a href= 'https://github.com/bs-driven/OOP_TeamEx'>OOP(object-oriented programming)</a></button></li>
+          
+          <li><button className='example-button'><a href='https://github.com/bs-driven/sql_project'>SQL</a></button></li>
+          
+          <li><button className='example-button'><a href= 'https://github.com/bs-driven/E_Commerce'>ORM(object-relational mapping)</a></button></li>
+          
+          <li><button className='example-button'><a href='https://github.com/bs-driven/SocialNetworking_NoSql'>NOSQL</a></button></li>
+          
+          <li><button className='example-button'><a href='https
+          ://github.com/bs-driven/PasswordGenerator'>JavaScript</a></button></li>
 
         </ul>   
        

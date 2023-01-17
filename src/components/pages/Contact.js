@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 export default function Contact(props) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [personalMessage, setMessage] = useState('');
 
   const handleSubmit = (e) =>{
     e.preventDefalut();
@@ -10,14 +11,17 @@ export default function Contact(props) {
       id: Math.random(Math.floor() * 1000),
       contactName: name,
       cantactEmail:email,
+      contactMessage: personalMessage,
     });
     setName('');
     setEmail('');
+    setMessage('');
   };
 
   const handleChange = (e) => {
     setName(e.target.value);
     setEmail(e.target.value);
+    setMessage(e.target.value);
   };
 
 
@@ -46,7 +50,9 @@ export default function Contact(props) {
             name="contactEmail"
             className="contact-input"
             onChange={handleChange}
-            ></input>
+            ></input><br></br>
+            <input type="text" placeholder='Message' value={personalMessage} name='contactMessage' className='contact-input'
+            onChange={handleChange}></input>
             <br></br>
             <button className="contact-button">Submit</button>
           
