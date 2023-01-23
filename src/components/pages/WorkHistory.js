@@ -3,13 +3,13 @@ import React from 'react';
 export default function WorkHistory() {
   return (
     <div className='resume-div'>
-      <h1>Work Summary</h1>
-      <p>
-        As I mentioned earlier I am new to this field so my work history won't reflect anything special. 
+      <h1 className="resume-h1">Work Summary</h1>
+      <p className="resume-p">
+        I am new to this field so my work history won't reflect anything special. 
         I'm coming from working in a warehouse as a forklift driver. 
         Which I've done for a few years now. 
         Before working as a forklift driver I was working as a insulation installer which I had done for a few years as well. 
-        I worked as fence installer as well which I will openly admit to anyone was the hardest work I have ever done. 
+        I worked as fence installer as well which I will openly admit to anyone was some of the hardest work I have ever done. 
         The man I worked for was a sub-contractor and only worked on metal/aluminum and chainlink fences. 
         I worked this job through a summer; pushing a portable genearator in a wheel-barrel is no easy task. 
         Nor is using post-diggers trying to make a hole 3 feet to 6 feet deep depending on how tall the fence is going to stand. 
@@ -24,7 +24,7 @@ export default function WorkHistory() {
         But the way todays society is set I don't have the right features to draw in a crowd nor make them want to give me their money. 
         Don't get me wrong if I can be proven wrong about this I'll gladly take the challenege on I just dont see it happening is all.    
       </p>
-      <p>
+      <p className="resume-p">
         I'd like to show you a few of the projects I've worked on:<br></br>
         <ul className='example-work-list'>
           <li><button className='example-button'><a href= 'https://github.com/bs-driven/NoteTaker'>Express.js</a></button></li>
