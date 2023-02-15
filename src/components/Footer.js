@@ -5,7 +5,7 @@ function Footer () {
     return(
         <div>
             <div className='footer-footer'>
-                <ul>
+                <ul className='footer-ul'>
                     <li>
                         <a href='https://github.com/bs-driven'><img  className= "footer-githubimage" style={{
                             resizeMode: "cover",

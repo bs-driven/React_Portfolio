@@ -4,6 +4,26 @@ export default function Contact(props) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [personalMessage, setMessage] = useState('');
+  
+  const handleChange = (e) => {
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
+
+    if (inputType === 'name'){
+      setName(inputValue)
+    }
+    if (inputType === 'email'){
+      setEmail(inputValue)
+    }
+    if (inputType === 'message'){
+      setMessage(inputValue)
+    }
+
+    // setName(e.target.value);
+    // setEmail(e.target.value);
+    // setMessage(e.target.value);
+  };
 
   const handleSubmit = (e) =>{
     e.preventDefalut();
@@ -18,11 +38,6 @@ export default function Contact(props) {
     setMessage('');
   };
 
-  const handleChange = (e) => {
-    setName(e.target.value);
-    setEmail(e.target.value);
-    setMessage(e.target.value);
-  };
 
 
   return (
@@ -35,8 +50,8 @@ export default function Contact(props) {
       </p><br></br>
 
 
-          <form className='contact-form'onSubmit={handleSubmit}>
-            <input type="text"
+          <form className='contact-form'>
+            <input type="name"
             placeholder='NAME'
             value={name}
             name="contactName"
@@ -44,17 +59,22 @@ export default function Contact(props) {
             onChange={handleChange}
             ></input>
             <br></br>
-            <input type="text"
+            <input type="email"
             placeholder='EMAIL'
             value={email}
             name="contactEmail"
             className="contact-input"
             onChange={handleChange}
             ></input><br></br>
-            <input type="text" placeholder='Message' value={personalMessage} name='contactMessage' className='contact-input'
-            onChange={handleChange}></input>
+            <input type="message"
+            placeholder='Message'
+            value={personalMessage}
+            name='contactMessage'
+            className='contact-input'
+            onChange={handleChange}
+            ></input>
             <br></br>
-            <button className="contact-button">Submit</button>
+            <button className="contact-button" onClick={handleSubmit}>Submit</button>
           
           </form>
       

@@ -1,6 +1,10 @@
 .footer-footer{
     padding:5%;
    
+   
+}
+.footer-ul{
+    list-style: none;
 }
 
 .footer-githubimage{
@@ -14,3 +18,4 @@
     margin-left: 50%;
     border: 3px solid black;
 }
+
