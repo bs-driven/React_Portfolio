@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.dacb6b27.css",
-    "main.js": "/static/js/main.34ef40c3.js",
-    "static/media/IMG_0568.JPG": "/static/media/IMG_0568.22d2c2efa2390ff063e3.JPG",
-    "static/media/coding_cert.png": "/static/media/coding_cert.1e660384b2b0a4c63e20.png",
-    "static/media/GitHub_Logo.png": "/static/media/GitHub_Logo.6149aa5ccbc036755594.png",
-    "index.html": "/index.html",
-    "main.dacb6b27.css.map": "/static/css/main.dacb6b27.css.map",
-    "main.34ef40c3.js.map": "/static/js/main.34ef40c3.js.map"
+    "main.css": "/React_Portfolio/static/css/main.42152329.css",
+    "main.js": "/React_Portfolio/static/js/main.89f5db0c.js",
+    "static/media/IMG_0568.JPG": "/React_Portfolio/static/media/IMG_0568.22d2c2efa2390ff063e3.JPG",
+    "static/media/coding_cert.png": "/React_Portfolio/static/media/coding_cert.1e660384b2b0a4c63e20.png",
+    "static/media/GitHub_Logo.png": "/React_Portfolio/static/media/GitHub_Logo.6149aa5ccbc036755594.png",
+    "index.html": "/React_Portfolio/index.html",
+    "main.42152329.css.map": "/React_Portfolio/static/css/main.42152329.css.map",
+    "main.89f5db0c.js.map": "/React_Portfolio/static/js/main.89f5db0c.js.map"
   },
   "entrypoints": [
-    "static/css/main.dacb6b27.css",
-    "static/js/main.34ef40c3.js"
+    "static/css/main.42152329.css",
+    "static/js/main.89f5db0c.js"
   ]
 }

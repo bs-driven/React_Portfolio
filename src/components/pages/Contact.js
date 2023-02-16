@@ -1,22 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 export default function Contact(props) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [personalMessage, setMessage] = useState('');
+
+  useEffect(() => {
+    localStorage.setItem('potenialEmployeer', JSON.stringify( {name, email, personalMessage}))
+  })
   
   const handleChange = (e) => {
     const { target } = e;
     const inputType = target.name;
     const inputValue = target.value;
 
-    if (inputType === 'name'){
+    if (inputType === 'contactName'){
       setName(inputValue)
     }
-    if (inputType === 'email'){
+    if (inputType === 'contactEmail'){
       setEmail(inputValue)
     }
-    if (inputType === 'message'){
+    if (inputType === 'contactMessage'){
       setMessage(inputValue)
     }
 
@@ -32,7 +36,14 @@ export default function Contact(props) {
       contactName: name,
       cantactEmail:email,
       contactMessage: personalMessage,
-    });
+    })
+    // const potenialEmployeer = {
+    //   C_name: contactName.value,
+    //   C_email: contactEmail.value,
+    //   C_message: contactMessage.value
+    // }
+    ;
+    alert(`Thank you, ${name}`);
     setName('');
     setEmail('');
     setMessage('');
@@ -51,7 +62,7 @@ export default function Contact(props) {
 
 
           <form className='contact-form'>
-            <input type="name"
+            <input type="text"
             placeholder='NAME'
             value={name}
             name="contactName"
@@ -59,14 +70,14 @@ export default function Contact(props) {
             onChange={handleChange}
             ></input>
             <br></br>
-            <input type="email"
+            <input type="text"
             placeholder='EMAIL'
             value={email}
             name="contactEmail"
             className="contact-input"
             onChange={handleChange}
             ></input><br></br>
-            <input type="message"
+            <input type="text"
             placeholder='Message'
             value={personalMessage}
             name='contactMessage'
