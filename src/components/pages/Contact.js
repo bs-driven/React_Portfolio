@@ -53,8 +53,8 @@ export default function Contact(props) {
 
   return (
     <div>
-      <h1>Contact Page</h1>
-      <p>
+      <h1 className = 'contact-h1'>Contact Me</h1>
+      <p className = 'contact-p'>
         If you'd like for the two us to connect please leave me your name and email.
         Then I'll reach out and we can go from there.
         Again I say thank you for your time.
