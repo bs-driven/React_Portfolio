@@ -15,7 +15,7 @@ function Footer () {
                     </li>
                 
                     <li>
-                        <a href="https://www.linkedin.com/in/bradley-sessoms-297a571a1/"><img className= 'footer-LinedIn_logo'  style={{
+                        <a href="www.linkedin.com/in/bradley-ses"><img className= 'footer-LinedIn_logo'  style={{
                             resizeMode: "cover",
                             height: 40,
                             width: 75
