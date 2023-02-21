@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 export default function Contact(props) {
+  const form = useRef();
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [personalMessage, setMessage] = useState('');
 
-  useEffect(() => {
-    localStorage.setItem('potenialEmployeer', JSON.stringify( {name, email, personalMessage}))
-  })
   
   const handleChange = (e) => {
     const { target } = e;
@@ -23,30 +22,22 @@ export default function Contact(props) {
     if (inputType === 'contactMessage'){
       setMessage(inputValue)
     }
-
-    // setName(e.target.value);
-    // setEmail(e.target.value);
-    // setMessage(e.target.value);
   };
 
-  const handleSubmit = (e) =>{
-    e.preventDefalut();
-    props.onSubmit({
-      id: Math.random(Math.floor() * 1000),
-      contactName: name,
-      cantactEmail:email,
-      contactMessage: personalMessage,
-    })
-    // const potenialEmployeer = {
-    //   C_name: contactName.value,
-    //   C_email: contactEmail.value,
-    //   C_message: contactMessage.value
-    // }
-    ;
-    alert(`Thank you, ${name}`);
-    setName('');
-    setEmail('');
-    setMessage('');
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('contact_me', 'contact_form', form.current, 'JlfE4uWPyQTUkuMWU')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+      alert(`Thank you, ${name}`);
+          setName('');
+          setEmail('');
+          setMessage('');
   };
 
 
@@ -61,7 +52,7 @@ export default function Contact(props) {
       </p><br></br>
 
 
-          <form className='contact-form'>
+          <form ref={ form } className='contact-form'>
             <input type="text"
             placeholder='NAME'
             value={name}
@@ -77,7 +68,7 @@ export default function Contact(props) {
             className="contact-input"
             onChange={handleChange}
             ></input><br></br>
-            <input type="text"
+            <input type="textarea"
             placeholder='Message'
             value={personalMessage}
             name='contactMessage'
@@ -85,10 +76,13 @@ export default function Contact(props) {
             onChange={handleChange}
             ></input>
             <br></br>
-            <button className="contact-button" onClick={handleSubmit}>Submit</button>
+            <button className="contact-button" onClick={sendEmail}>Submit</button>
           
           </form>
       
     </div>
   );
 }
+
+
+
